@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+
+body{
+    background-image: radial-gradient(circle , #6a01c7, #7D00EB, #8400F7, #7000d1e7);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+  /*foto e @*/
+
+h1, p{
+    color: white;
+}
+
+.arroba{
+    text-align: center;
+}
+.arroba h1{
+    padding-bottom: 0px;
+
+}
+.arroba img{
+    width: 150px;
+    margin-top: 2.5%;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*TIKTOK*/
+
+
+.tiktok-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tiktok{
+    border: 2px solid white;
+    width: 450px;
+    border-radius: 80px;
+    padding: 6px 4px 4px 4px;
+    transition: 0.3s;
+}
+
+.tiktok:hover{
+    background-color: white;
+}
+
+.tiktok:hover span{
+    color: #6a01c7;
+}
+
+.tiktok img{
+    width: 50px;
+}
+
+
+/*YOUTUBE*/
+
+
+.youtube-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10px;
+}
+
+.youtube{
+    border: 2px solid white;
+    width: 450px;
+    border-radius: 80px;
+    padding: 6px 4px 4px 4px;
+    transition: 0.3s;
+}
+
+.youtube:hover{
+    background-color: white;
+}
+
+.youtube:hover span{
+    color: #6a01c7;
+}
+
+.youtube img{
+    width: 50px;
+}
+
+/*Github*/
+
+
+.github-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    justify-items: center;
+
+    margin-top: 10px;
+}
+
+.github{
+    border: 2px solid white;
+    width: 450px;
+    border-radius: 80px;
+    padding: 6px 4px 4px 4px;
+    transition: 0.3s;
+}
+.github:hover{
+    background-color: white;
+}
+.github:hover span{
+    color: #6a01c7;
+}
+
+.github img{
+    width: 50px;
+}
+
+
+/*Linkedin*/
+
+
+.linkedin-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    justify-items: center;
+
+    margin-top: 10px;
+}
+.linkedin{
+    border: 2px solid white;
+    width: 450px;
+    border-radius: 80px;
+    padding: 6px 4px 4px 4px;
+    transition: 0.3s;
+}
+.linkedin:hover{
+    background-color: white;
+}
+
+.linkedin:hover span{
+    color: #6a01c7;
+}
+
+.linkedin img {
+    width: 50px;
+}
+
+
+/*Cursoemvideo*/
+
+
+.site-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    justify-items: center;
+
+    margin-top: 10px;
+}
+
+.cursoemvideo{
+    
+    border: 2px solid white;
+    width: 450px;
+    border-radius: 80px;
+    padding: 6px 4px 4px 4px;
+    transition: 0.3s;
+}
+
+.cursoemvideo:hover{
+    background-color: white;
+}
+
+.cursoemvideo:hover span{
+    color: #6a01c7;
+}
+
+.cursoemvideo img{
+    width: 50px;
+}
+
+
+
+/*Centraliza os <span>*/
+
+
+.tiktok, .youtube, .github, .linkedin, .cursoemvideo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.tiktok img, .youtube img, .github img, .linkedin img, .cursoemvideo img {
+    margin-right: -40px;
+}
+
+span{
+    color: white;
+    margin: 0 auto; 
+}
+
