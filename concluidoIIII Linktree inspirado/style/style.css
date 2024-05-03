@@ -31,6 +31,7 @@ a {
 }
 
 
+@media (min-width: 800px) {
 
 /*TIKTOK*/
 
@@ -45,7 +46,7 @@ a {
 
 .tiktok{
     border: 2px solid white;
-    width: 450px;
+    width: 650px;
     border-radius: 80px;
     padding: 6px 4px 4px 4px;
     transition: 0.3s;
@@ -56,7 +57,7 @@ a {
 }
 
 .tiktok:hover span{
-    color: #8b8989;
+    color: #505050;
 }
 
 .tiktok img{
@@ -78,7 +79,7 @@ a {
 
 .youtube{
     border: 2px solid white;
-    width: 450px;
+    width: 650px;
     border-radius: 80px;
     padding: 6px 4px 4px 4px;
     transition: 0.3s;
@@ -110,7 +111,7 @@ a {
 
 .github{
     border: 2px solid white;
-    width: 450px;
+    width: 650px;
     border-radius: 80px;
     padding: 6px 4px 4px 4px;
     transition: 0.3s;
@@ -140,7 +141,7 @@ a {
 }
 .linkedin{
     border: 2px solid white;
-    width: 450px;
+    width: 650px;
     border-radius: 80px;
     padding: 6px 4px 4px 4px;
     transition: 0.3s;
@@ -173,7 +174,7 @@ a {
 .cursoemvideo{
     
     border: 2px solid white;
-    width: 450px;
+    width: 650px;
     border-radius: 80px;
     padding: 6px 4px 4px 4px;
     transition: 0.3s;
@@ -192,9 +193,9 @@ a {
 }
 
 
+}
 
 /*Centraliza os <span>*/
-
 
 .tiktok, .youtube, .github, .linkedin, .cursoemvideo {
     display: flex;
@@ -210,3 +211,166 @@ span{
     margin: 0 auto; 
 }
 
+
+@media (max-width: 800px) {
+
+    /*TIKTOK*/
+    
+    
+    .tiktok-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    .tiktok{
+        border: 2px solid white;
+        width: 350px;
+        border-radius: 80px;
+        padding: 6px 4px 4px 4px;
+        transition: 0.3s;
+    }
+    
+    .tiktok:hover{
+        background-color: white;
+    }
+    
+    .tiktok:hover span{
+        color: #505050;
+    }
+    
+    .tiktok img{
+        width: 50px;
+    }
+    
+    
+    /*YOUTUBE*/
+    
+    
+    .youtube-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    
+        margin-top: 10px;
+    }
+    
+    .youtube{
+        border: 2px solid white;
+        width: 350px;
+        border-radius: 80px;
+        padding: 6px 4px 4px 4px;
+        transition: 0.3s;
+    }
+    
+    .youtube:hover{
+        background-color: white;
+    }
+    
+    .youtube:hover span{
+        color: #8b8989;
+    }
+    
+    .youtube img{
+        width: 50px;
+    }
+    
+    /*Github*/
+    
+    
+    .github-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+        justify-items: center;
+    
+        margin-top: 10px;
+    }
+    
+    .github{
+        border: 2px solid white;
+        width: 350px;
+        border-radius: 80px;
+        padding: 6px 4px 4px 4px;
+        transition: 0.3s;
+    }
+    .github:hover{
+        background-color: white;
+    }
+    .github:hover span{
+        color: #8b8989;
+    }
+    
+    .github img{
+        width: 50px;
+    }
+    
+    
+    /*Linkedin*/
+    
+    
+    .linkedin-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+        justify-items: center;
+    
+        margin-top: 10px;
+    }
+    .linkedin{
+        border: 2px solid white;
+        width: 350px;
+        border-radius: 80px;
+        padding: 6px 4px 4px 4px;
+        transition: 0.3s;
+    }
+    .linkedin:hover{
+        background-color: white;
+    }
+    
+    .linkedin:hover span{
+        color: #8b8989;
+    }
+    
+    .linkedin img {
+        width: 50px;
+    }
+    
+    
+    /*Cursoemvideo*/
+    
+    
+    .site-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;    
+        justify-items: center;
+    
+        margin-top: 10px;
+    }
+    .cursoemvideo{
+        
+        border: 2px solid white;
+        width: 350px;
+        border-radius: 80px;
+        padding: 6px 4px 4px 4px;
+        transition: 0.3s;
+    }
+    
+    .cursoemvideo:hover{
+        background-color: white;
+    }
+    
+    .cursoemvideo:hover span{
+        color: #8b8989;
+    }
+    
+    .cursoemvideo img{
+        width: 50px;
+    }
+    
+    
+    }
