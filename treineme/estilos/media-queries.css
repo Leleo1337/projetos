@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+
+
+@media screen and (max-width: 768px) {
+    .page{
+        width: 95.5vw;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-top: 30px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    br{
+        display: none;
+    }
+    main > img{
+        position: relative;
+        padding: 0px;
+        width: 330px;
+        bottom: 100px;
+        
+    }
+    button{
+        position: relative;
+        left: 50%;
+        top: 340px;
+        transform: translate(-50%,0);
+    }
+    #balls {
+        display: none;
+    }
+    footer{
+        margin-top: 40px;
+
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1024px) {
+    .page{
+        width: 100vw;
+        padding: 20px;
+        margin: 0 auto;
+    }
+
+    header{  
+        padding-top: 40px;
+        justify-content: space-evenly;
+    }
+    main{
+        justify-content: space-evenly;
+    }
+
+    button{
+        position: relative;
+        left: 100px;
+        top: 10px;
+    }
+    footer{
+        margin-top: 40px;
+    }
+}
+
