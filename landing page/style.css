@@ -1,0 +1,135 @@
+@charset "UTF-8";
+@import url('fonts.css');
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /*cores*/
+    --color-background: #222222; /* Fundo preto */
+    --color-border: #840ec9; /*cor da borda do "já tem conta?" */
+    --color-title-purple: #830EBB;    /* Roxo usado no titulo */ 
+    --color-title-light: #f0f0f0; /* branco usado no titulo */
+    --color-text: #dddddd; /*cor usada em textos*/
+    --color-button: #840ec9; /*cor do botão*/
+    --color-button-hover: #9c3fd2; /* Cor do botão no hove) */
+}
+
+/*Main site*/
+.page{
+    max-width: 125rem;
+    margin: 0 auto;
+}
+
+body{
+    background-color: var(--color-background);
+    font-size: 1.6rem; 
+    font-family: 'poppinsregular', sans-serif; 
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-title-light);
+    padding: 3rem;
+}
+header h1{  
+    padding-left: 1rem;
+    line-height: 3.2rem;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+main{
+    display: flex;
+    gap: 5rem;
+    padding: 5rem 0rem 0rem 3rem;
+}
+
+section{
+    padding: 0rem 0rem 0rem .8rem;
+}
+
+section h1{
+    font-family: 'poppinsbold',sans-serif;
+    font-size: 5.6rem;
+    line-height: 4.8rem;
+    color: var(--color-title-purple);
+}
+
+section h2{
+    font-family: 'poppinsbold',sans-serif;
+    font-size: 5.6rem;
+    line-height: 4.8rem;
+    color: var(--color-title-light);
+}
+
+section p{
+    font-family: 'poppinslight', sans-serif;
+    padding-top: 3rem;
+    color: var(--color-text);
+}
+
+form{
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 3rem;
+}
+
+
+/*general styles*/
+a{  
+    text-decoration: none;
+    color: var(--color-text-light);
+}
+
+a:hover{
+    color: #9c3fd2;
+}
+
+.hasAccount{
+    border: 2px solid var(--color-border);
+    padding: .5rem 1.2rem;
+    border-radius: 1rem;
+}
+
+input{
+    width: 30rem;
+    height: 4rem;
+    padding-left: 1.3rem;
+    border-radius: 1.6rem;
+    border: none;
+
+    font-size: 1.2rem;
+}
+
+button{
+    background-color: var(--color-button);
+    color: white;
+
+    width: 13rem;
+    height: 4rem;
+
+    border: none;
+    border-radius: 1.6rem;
+
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--color-button-hover);
+}
+
+img{
+    width: 55rem;
+}
