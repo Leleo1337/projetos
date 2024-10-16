@@ -5,12 +5,11 @@
      demorei um pouco pra fazer kkk, mas a solução é bem facil
      pensei demais pra algo simples
 */
-const body = document.querySelector('body')
+
 const lamp = document.querySelector('img')
 const btnOn = document.querySelector('#turnOn')
 const btnOff = document.querySelector('#turnOff')
 let isBroken = false
-let isActive;
 
 btnOn.addEventListener('click', turnOn)
 btnOff.addEventListener('click', turnOff)
@@ -18,6 +17,7 @@ btnOff.addEventListener('click', turnOff)
 lamp.addEventListener('dblclick', breakLamp)
 lamp.addEventListener('mouseover', turnOn)
 lamp.addEventListener('mouseout', turnOff)
+
 
 btnOff.style.display = 'none'
 
