@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'calculator';
+    src: url('./fonts/Calculator.ttf') format('woff2');
+}
+    
+
 *{
     padding: 0;
     margin: 0;
@@ -7,8 +13,10 @@
 :root {
     font-size: 62.5%;
 
-    --app-background: #ffd49bf3;
     --pg-background: #ee5b1c;
+    --app-background: #ffd49bf3;
+    --app-shadow: rgba(0, 0, 0, 0.527);
+    --btn-background: white;
     
     --ff-primary: 'Arial', sans-serif;
 }
@@ -31,18 +39,27 @@ body{
     padding: 2.5rem 2.5rem 5rem 2.5rem;
     
     border-radius: 3rem;
-    box-shadow: .1rem 0 .5rem 0 rgba(0, 0, 0, 0.527);
+    box-shadow: .1rem 0 .5rem 0 var(--app-shadow);
 }
 
 header{
     background-color: rgb(255, 255, 255);
-    box-shadow: .1rem 0 .5rem 0 rgba(0, 0, 0, 0.527);
+    box-shadow: .1rem 0 .5rem 0 var(--app-shadow);
+
+    font-family: calculator;
+    font-size: 2rem;
+    font-weight: 600;
+    overflow: visible;
+    white-space: none;
 
     width: 100%;
     height: 8rem;
     margin-bottom: 3rem; 
 
     border-radius: 2rem;
+}
+#solution{
+    font-size: 4rem;
 }
 
 
@@ -67,11 +84,11 @@ button {
     width: 7.5rem;
     height: 5rem; 
     font-size: 1.6rem; 
-    background-color: white;
+    background-color: var(--btn-background);
 
     border:none;
     border-radius: 1.45rem;
-    box-shadow: 0rem 4px 0rem 0 rgba(0, 0, 0, 0.527);
+    box-shadow: 0rem 4px 0rem 0 var(--app-shadow);
     cursor: pointer;
 }
 
@@ -83,6 +100,21 @@ button#calculate-btn{
     height: 11rem;
 }
 
+
+/* assets */
+
+.container{  /*do header*/
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.3rem;
+
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+}
 
 .first-line, .second-line, .third-line, .fourth-line {
     display: flex; 
