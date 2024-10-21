@@ -1,15 +1,15 @@
 "use strict"; 
 
 const sounds = {
-    'A': './sounds/boom.wav',
-    'S': './sounds/clap.wav',
-    'D': './sounds/hihat.wav',
-    'F': './sounds/kick.wav',
-    'G': './sounds/openhat.wav',
-    'H': './sounds/ride.wav',
-    'J': './sounds/snare.wav',
-    'K': './sounds/tink.wav',
-    'L': './sounds/tom.wav',
+    'A': 'boom.wav',
+    'S': 'clap.wav',
+    'D': 'hihat.wav',
+    'F': 'kick.wav',
+    'G': 'openhat.wav',
+    'H': 'ride.wav',
+    'J': 'snare.wav',
+    'K': 'tink.wav',
+    'L': 'tom.wav',
 }
 
 const criarDiv = (text) =>{
@@ -24,16 +24,30 @@ const exibir = (sounds) => Object.keys(sounds).forEach(criarDiv)
 
 exibir(sounds)
 
-const activateDiv = (event) =>{
-    const key = event.target.id
-    playSong(key)
+const effect = (key) => document.getElementById(key).classList.add('active')
+const removeEffect = (key) => {
+    const div = document.getElementById(key)
+    const removeActive = () => div.classList.remove('active')
+    div.addEventListener('transitionend', removeActive)
 }
 
+const activateDiv = (event) =>{
+    const key = event.type != 'click' ? event.key.toUpperCase(): event.target.id
+
+    const letterExists = sounds.hasOwnProperty(key)
+    if(letterExists){
+        effect(key)
+        playSong(key)
+        removeEffect(key)
+    }
+}
+
+
 const playSong = (key) =>{
-    const audio = document.createElement('audio')
-    audio.src = key
-    audio.autoplay
-    console.log(audio.src)
+    const audio = new Audio(`./sounds/${sounds[key]}`)
+    audio.volume = 0.4
+    audio.play()
 }
 
 document.querySelector('.container').addEventListener('click', activateDiv)
+window.addEventListener('keydown', activateDiv)
