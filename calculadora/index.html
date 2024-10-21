@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <header id="painel">
+            <p id="calculating">Number</p>
+            <p id="solution">3</p>
+        </header>
+        <main>
+            <section class="horizontal row secondary-color">
+                <button id="clear-btn">C</button>
+                <button id="cancel-entry-btn">CE</button>
+                <button id="division-btn">/</button>
+                <button id="multiplication-btn">*</button>
+            </section>
+            <section id="buttons-wrapper">
+                <div class="number-buttons">
+                    <div class="first-line">
+                        <button id="seven-btn">7</button>
+                        <button id="eight-btn">8</button>
+                        <button id="nine-btn">9</button>
+                    </div>
+                    <div class="second-line">
+                        <button id="four-btn">4</button>
+                        <button id="five-btn">5</button>
+                        <button id="six-btn">6</button>
+                    </div>
+                    <div class="third-line">
+                        <button id="one-btn">1</button>
+                        <button id="two-btn">2</button>
+                        <button id="three-btn">3</button>
+                    </div>
+                    <div class="fourth-line">
+                        <button id="zero-btn" style="width: 16rem;">0</button>
+                        <button id="dot-btn">.</button>
+                    </div>
+                </div>
+                <div class="vertical column secondary-color">
+                    <button id="subtraction-btn">-</button>
+                    <button id="addition-btn">+</button>
+                    <button id="calculate-btn">=</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
