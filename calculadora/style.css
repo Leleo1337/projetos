@@ -114,6 +114,10 @@ button#calculate-btn{
 
     padding-top: 1rem;
     padding-right: 1.5rem;
+
+    overflow: hidden;
+    max-width: 100%;
+    white-space: none;
 }
 
 .first-line, .second-line, .third-line, .fourth-line {
