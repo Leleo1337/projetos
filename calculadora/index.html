@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="color ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="js/calculator.js" defer></script>
+    <script src="js/turnMode.js" defer></script>
+
 </head>
 <body>
+    <div id="mode">
+        <div id="turn-light">
+            <i class="ph-bold ph-sun"></i>
+        </div>
+        <div id="turn-dark">
+            <i class="ph-bold ph-moon"></i>
+        </div>
+    </div>
     <div id="app">
         <header id="painel">
             <div class="container">
@@ -51,6 +64,6 @@
             </section>
         </main>
     </div>
-    <script src="script.js" defer></script>
+    <footer>by <a href="https://github.com/Leleo1337" target="_blank">leleo1337</a></footer>
 </body>
 </html>
