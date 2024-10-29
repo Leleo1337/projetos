@@ -39,8 +39,15 @@ buttons.forEach((btn) => {
             if ((operator === '' && n1.includes('.')) || (operator !== '' && n2.includes('.'))) {
                 return;
             }
+            if(operator === '' && n1 == '.' || n1 == ''){
+                operator = ''
+                n1 = 0
+            }
+            if(operator !== '' && n2 == ''){
+                n2 = 0
+            }
         }
-        
+
         if(operator == ''){
             n1 += clickedButton
         }else{
