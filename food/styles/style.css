@@ -43,6 +43,9 @@ section {
     padding: 2.8rem 8%;
 }
 
+
+
+
 .selected > a{
     color: black;
     border-bottom: .3rem solid var(--color-primary-4);
@@ -63,4 +66,8 @@ section {
 .fa-heart{
     font-size: 2.8rem;
     color: var(--color-neutral-0);
+}
+
+.hidden{
+    display: none;
 }

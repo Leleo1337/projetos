@@ -1,8 +1,7 @@
 #home-container{
     display: flex;
     justify-content: space-between;
-    min-height: 100vh;
-    min-width: 100%;
+
 }
 #home-container img{
     margin-top: 5rem;
@@ -67,9 +66,14 @@
 #cta-buttons a:last-child button{
     background-color: var(--color-primary-5);
     padding: .5rem 1.3rem;
+    cursor: pointer;
     
     border: none;
     border-radius: 1rem;
+}
+
+#cta-buttons a > button:hover{
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.15);
 }
 
 .social-buttons{
@@ -87,8 +91,12 @@
     border-radius: 1rem;
     font-size: larger;
     text-decoration: none;
+    transition: .3s ease;
 }
 
+.social-buttons a:hover{
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.35);
+}
 
 #shape{
     background-color: var(--color-primary-2);
@@ -102,7 +110,7 @@
     height: 90%;
 }
 
-@media screen and (min-width: 320px) and (max-width: 620px){
+@media screen and (max-width: 1172px){
     #home-container img, #shape{
         display: none;
     }
@@ -128,19 +136,23 @@
     .social-buttons, #cta-buttons{
         justify-content: center;
     }
-
-    #cta-buttons a:first-child{
-        width: 20.5rem;
-    }
-
-    #cta-buttons a > button{
-        display: none;
-    }
     #heart{
         bottom: 51%;
     }
+    #cta-buttons a:first-child{
+        width: 20.5rem;
+    }
+    #cta-buttons a > button{
+        display: none;
+    }
 
+}
 
+@media screen and (min-width: 601px) and (max-width: 1172px) {
+    #cta-buttons a > button{
+        display: flex;
+        padding: 2rem 0 2 0;
+    }
 }
 
 

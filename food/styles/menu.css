@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    min-height: 100vh;
+    padding-top: 5%;
+    padding-bottom: 13%;
 }
 
 /*h2*/
@@ -19,6 +20,8 @@
     flex-direction: row;
     gap: 2rem;
     padding-top: 2rem;
+    justify-content: center;
+
 }
 
 .card{    
@@ -26,7 +29,7 @@
     flex-direction: column;
     background-color: var(--color-neutral-0);
 
-    width: 35rem;
+    width: calc(10rem + 15vw);
     padding: 2rem;
     align-items: center;
     border-radius: 2rem;
@@ -34,8 +37,11 @@
 }
 
 #heart{
+    /*MUITO BUGADO, NAO SEI RESOLVER!!!!!!!!!!!!!*/
+    display: none;
     position: relative;
-    left: 44.3%;
+    top: calc(-2.75rem); /* Ajuste para a borda superior do cartão */
+    right: calc(-16.rem);
     text-align: center;
     padding-top: 1rem;
     padding-left: .5rem;
@@ -71,20 +77,30 @@
 .card-price button{
     background-color: var(--color-primary-5);
     padding: .5rem 1.5rem;
-
+    cursor: pointer;
     border: none;
     border-radius: 1rem;
+    transition: .2s ease;
 
     box-shadow: .1rem .1rem .5rem .15rem rgba(0, 0, 0, 0.1);
 }
+.card-price button:hover{
+    background-color: rgba(223, 153, 3, 0.719);
+}
 
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
+    #menu-container{
+        text-align: center;
+    }
+    #menu-container h3{
+        font-size: 3.2rem;
+    }
     #cards-wrapper{
         flex-direction: column;
+        align-items: center;
     }
     .card{
-        width: 30rem;
+        width: calc(20rem + 35vw);
     }
     #heart{
         display: none;
@@ -93,3 +109,16 @@
 
 
 
+@media screen and (min-width: 601px) and (max-width: 1172px) {
+    #cards-wrapper{
+        flex-wrap: wrap;
+    }
+    .card{
+        width: calc(9.5rem + 23vw);
+        padding: 0 .5rem;
+    }
+    #heart{
+        top: 0;
+        left: 40%;
+    }
+}

@@ -44,16 +44,32 @@ header button{
     border: none;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+header button:hover{
+    background-color: rgba(226, 157, 9, 0.719);
 }
 
 
-@media screen and (max-width: 760px)  {
+
+
+@media screen and (max-width: 1172px)  {
     header nav > ul, nav > button{
         display: none;
     }
     nav{
         align-items: center;
     }
+    .burguer{
+        font-size: 2rem;
+        cursor: pointer;
+        display: block;
+    }
+
+    
+    
 }
 
 
