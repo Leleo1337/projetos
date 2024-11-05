@@ -1,11 +1,12 @@
 #ratings-container{
     display: flex;
-    gap: 2.5rem;
-    padding: 12rem 31rem;
+    gap: 1.5rem;
+    min-height: calc(100vh - 91px);
+    padding: 0 15%;
 }
 
 #ratings-container > img{
-    width: 50rem;
+    max-height: 63rem;
 }
 
 #feedback-wrapper{
@@ -50,7 +51,7 @@
     border-radius: 1rem;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     #ratings-container{
         padding: 5rem;
         text-align: center;
@@ -58,4 +59,21 @@
     #ratings-container > img{
         display: none;
     }
+    
+    #feedback-wrapper{
+        align-items: center;
+    }
+    #feedback-wrapper > h3{
+        font-size: 2.65rem;
+    }
+    .feedback{
+        flex-direction: column;
+    }
+    #feedback-content p:first-child{
+        flex-wrap: wrap;
+        gap: .5rem;
+        justify-content: center;
+    }
+
 }
+

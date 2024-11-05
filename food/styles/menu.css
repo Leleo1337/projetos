@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 12rem 15rem 15rem 15rem;
+    min-height: 100vh;
 }
 
 /*h2*/
@@ -26,8 +26,8 @@
     flex-direction: column;
     background-color: var(--color-neutral-0);
 
-    width: 40rem;
-    padding: 0 1rem 2.5rem 1rem;    
+    width: 35rem;
+    padding: 2rem;
     align-items: center;
     border-radius: 2rem;
     box-shadow: .1rem .2rem 1.5rem .16rem rgba(0, 0, 0, 0.15);
@@ -52,7 +52,7 @@
 }
 
 .card-content{
-    width: 32rem;
+    width: 80%;
     text-align: center;
     padding: 2rem 0;
 }
@@ -79,21 +79,17 @@
 }
 
 
-
-@media screen and (max-width: 768px){
-    #menu-container{
-        padding: 5rem 5rem 5rem 5rem;
-        text-align: center;
-    }
+@media screen and (max-width: 480px){
     #cards-wrapper{
         flex-direction: column;
-        gap: 2rem;
     }
     .card{
-        width: 40rem;
+        width: 30rem;
     }
     #heart{
-        left: 44.5%;
+        display: none;
     }
-
 }
+
+
+
