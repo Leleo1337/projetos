@@ -30,7 +30,7 @@
     background-color: var(--color-neutral-0);
 
     width: calc(10rem + 15vw);
-    padding: 2rem;
+    padding: 1rem;
     align-items: center;
     border-radius: 2rem;
     box-shadow: .1rem .2rem 1.5rem .16rem rgba(0, 0, 0, 0.15);
@@ -114,7 +114,7 @@
         flex-wrap: wrap;
     }
     .card{
-        width: calc(9.5rem + 23vw);
+        width: calc(9rem + 23vw);
         padding: 0 .5rem;
     }
     #heart{

@@ -19,7 +19,7 @@ export default function reveal(){
     });
     
     ScrollReveal().reveal('.feedback', {
-        distance: '200px',
+        distance: '100px',
         duration: 1250,
         origin: 'right',
     });
