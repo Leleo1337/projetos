@@ -5,7 +5,7 @@
 }
 #home-container img{
     margin-top: 5rem;
-    width: 75rem;
+    width: 80vh;
 }
 
 #content-wrapper{
@@ -118,7 +118,7 @@
 
     border-radius: 45% 30% 0% 20%;
     width: 50%;
-    height: 90%;
+    height: 90vh;
 }
 
 @media screen and (max-width: 1172px){
