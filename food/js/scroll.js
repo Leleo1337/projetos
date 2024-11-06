@@ -23,5 +23,4 @@ export default function reveal(){
         duration: 1250,
         origin: 'top',
     });
-
 }
