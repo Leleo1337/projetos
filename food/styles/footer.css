@@ -1,8 +1,18 @@
 footer{
     background-color: var(--color-primary-2);
-    display: block;
-    padding: 3rem;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding: 3rem;
     margin-top: 8rem;
+}
+footer .social-buttons{
+    margin: 0;
+}
+
+footer a{
+    font-weight: 600;
+    text-decoration: underline;
+    color: rgb(61, 80, 255);
+    font-size: 1.6rem;
 }
