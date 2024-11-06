@@ -32,7 +32,7 @@ function closeNavigationMenu(){
 }
 
 function scrollNavitation(){
-    let scrollPosition = window.scrollY + 80;
+    let scrollPosition = window.scrollY + 250;
     sections.forEach(section => {
         if (scrollPosition >= section.offsetTop) {
             links.forEach(link =>{
