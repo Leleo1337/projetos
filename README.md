@@ -34,5 +34,5 @@ alguns dos meus projetos pessoais, projetos de cursos e afins
 ---
 
 ### [Site Android (Gustavo Guanabara)](https://leleo1337.github.io/projetos/site%20android_gustavo-guanabara/)
-> **Descrição:** recriando uma página temática sobre Android, com base nas aulas do Gustavo Guanabara.
+> **Descrição:** recriando uma página temática sobre Android, com base nas aulas do Gustavo Guanabara. <br>
 > **Tecnologias:** HTML, CSS
