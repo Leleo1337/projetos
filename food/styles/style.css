@@ -43,16 +43,9 @@ section {
     padding: 2.8rem 8%;
 }
 
-
-
-
-.selected > a{
+a.selected{
     color: black;
     border-bottom: .3rem solid var(--color-primary-4);
-}
-
-.notSelected > a{
-    color: #1d1d1dad;
 }
 
 .highlight{
@@ -68,6 +61,22 @@ section {
     color: var(--color-neutral-0);
 }
 
-.hidden{
+/*nav mobile*/
+
+.icons{
     display: none;
+}
+
+i.burguer, i.burguer-close{
+    cursor: pointer;
+    font-size: 1.9rem;
+}
+
+i.burguer{
+    display: none;
+}
+i.burguer-close{
+    display: none;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
 }

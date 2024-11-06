@@ -1,10 +1,10 @@
 header{
-    display: block;
     position: sticky;
     top: 0;
     z-index: 3;
     background-color: var(--color-primary-1);
     padding: 2.8rem 8%;
+    width: 100%;
 }
 
 #logo{
@@ -32,6 +32,7 @@ header nav > ul{
 }
 
 header nav li > a{
+    color: #1d1d1dad;
     font-weight: 600;
     text-decoration: none;
 }
@@ -59,16 +60,34 @@ header button:hover{
     header nav > ul, nav > button{
         display: none;
     }
+
     nav{
         align-items: center;
+     }
+    
+    header .icons{
+        display: block;
     }
-    .burguer{
-        font-size: 2rem;
-        cursor: pointer;
+    header i.burguer{
         display: block;
     }
 
+    nav.mobile-open{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav.mobile-open ul{
+        align-items: center;
+        gap: 1rem;
+        flex-direction: column;
+        display: flex;
+    }
     
+    nav.mobile-open button{
+        margin-top: 2.5rem;
+        display: block;
+    }
     
 }
 
