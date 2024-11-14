@@ -17,20 +17,20 @@ clearBtn.addEventListener('click', clearAll)
 cancelEntryBtn.addEventListener('click', cancelEntry)
 calculateBtn.addEventListener('click', handleCalculate)
 
-
 buttons.forEach((btn) => {
     btn.addEventListener('click', (event) =>{
         let clickedButton = event.target.textContent;
+
         if(blockedButtons(clickedButton)){
             return
         }
         if(isOperator(clickedButton)){
             if(n1 == '' && clickedButton == '-'){
                 n1 = clickedButton
-                display(n1)
-            }else if(n1 != ''){
+                display()
+            }else if(n1 != '' && n1 != '-' && operator == ''){
                 operator = clickedButton
-                display(operator)
+                display()
             }
             return
         }
@@ -54,13 +54,11 @@ buttons.forEach((btn) => {
             n2 += clickedButton
         }
         
-
         console.log(`n1 : ${n1} op: ${operator} n2: ${n2}`)
         display()
 
     })
 })
-
 
 
 function calculate(n1,op,n2){
