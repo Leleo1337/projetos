@@ -120,13 +120,16 @@ button {
     border-radius: 1.45rem;
     box-shadow: 0rem 4px 0rem 0 var(--app-shadow);
     cursor: pointer;
+    transition: all .5s ease;
 }
 
 button:hover{
     background-color: var(--btn-primary-hover);
+    transition: none
 }
 button:active{
     background-color: var(--btn-primary-active);
+    transition: none
 }
 
 button#calculate-btn{

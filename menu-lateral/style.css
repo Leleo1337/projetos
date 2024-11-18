@@ -1,0 +1,184 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --background-main: #E9ECF5;   /* Fundo Principal */
+    --sidebar-bg: #FFFFFF;        /* Fundo da Sidebar */
+    --sidebar-active: #5839f0;    /* Fundo do Item Ativo */
+    --sidebar-active-hover: #4c2daa;
+    --text-main: #4F4F4F;         /* Cor do Texto e Ícones */
+    --text-active: #FFFFFF;       /* Cor do Texto Ativo */
+    --logout-bg: #FF6347;         /* Fundo do Botão Logout */
+    --sidebar-hover: #ebebeb;
+}
+  
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    background-color: var(--background-main);
+}
+
+#side-bar{
+    position: relative;
+    background-color:  var(--sidebar-bg);
+
+    width: 18rem;
+    height: 100vh;
+
+    padding: 10px;
+    border-radius: 0px 20px 20px 0px;
+
+    transition: width .3s ease;
+}
+
+#user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 8px;
+}
+
+#user img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+
+#user #name{
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+#user p{
+    color: var(--text-main);
+    font-size: 14px;
+}
+
+
+#side-bar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+
+    white-space: nowrap;
+
+}
+
+#side-bar li{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#side-bar li:hover{
+    background-color: var(--sidebar-hover);
+}
+
+#side-bar ul li > a{
+    color: black;
+    text-decoration: none;
+}
+
+#log-out {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: calc(100%);
+    padding: 10px;
+    border-top: 1px solid var(--background-main);
+    text-align: center;
+
+    white-space: nowrap;
+
+}
+
+#log-out a{
+    color: black;
+    text-decoration: none;
+}
+
+
+#open-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    right: -12px;
+}
+
+#open-nav button{
+    background-color: var(--sidebar-active);
+    color: white;
+    padding: 2px 7px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li.active{
+    background-color: var(--sidebar-active);
+    width: 100%;
+    border-radius: 10px;
+}
+
+li.active:hover {
+    background-color: var(--sidebar-active-hover) !important;
+}
+
+
+li.active i, li.active span{
+    color: white;
+}
+
+
+
+/*fechar nav*/
+
+
+
+nav.off {
+    width: 90px !important;
+}
+
+
+nav.off i{
+    font-size: 20px;
+}
+
+nav.off #user{
+    justify-content: center;
+}
+
+nav.off #user-content{
+    display: none;
+}
+
+
+nav.off ul li a > span{
+    display: none;
+}
+
+nav.off ul{
+    align-items: center;
+}
+
+nav.off #log-out span{
+    display: none;
+}
