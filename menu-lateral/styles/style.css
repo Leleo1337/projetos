@@ -141,17 +141,7 @@ body{
     text-decoration: none;
 }
 
-
-/*MAIN PAGE*/
-
-main{
-    flex-grow: 1;
-    max-width: 1900px;
-    padding: 2rem 1rem 0rem 6rem;
-}
-
-
-/*close nav*/
+/*close side-bar*/
 
 nav.off {
     width: 70px !important;
@@ -194,6 +184,18 @@ nav.off #logout span{
     display: none;
 }
 
+
+
+/*MAIN PAGE*/
+
+main{
+    flex-grow: 1;
+    max-width: 1900px;
+    padding: 2rem 1rem 0rem 6rem;
+}
+
+
+
 /*Modals*/
 
 #modal-logout.on{
@@ -206,12 +208,14 @@ nav.off #logout span{
     border-radius: 20px;
     padding: 10px;
 }
+
 #confirmation{
     display: flex;
     justify-content: center;
     gap: 50px;
 
     font-size: 18px;
+
 }
 
 #confirmation i{
@@ -222,7 +226,6 @@ nav.off #logout span{
 #modal-logout.off{
     display: none;
 }
-
 
 
 /*assets*/
