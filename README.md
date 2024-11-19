@@ -7,7 +7,7 @@ alguns dos meus projetos pessoais, projetos de cursos e afins
 ## 🌐 Projetos
 
 
-### [menu-lateral] (https://leleo1337.github.io/projetos/menu-lateral/)
+### [menu-lateral](https://leleo1337.github.io/projetos/menu-lateral/)
 > **Descrição:** Pagina com um menu lateral responsivo e simples
 > **Tecnologias:** HTML, CSS, JavaScript
 
