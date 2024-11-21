@@ -30,7 +30,7 @@ function showData(){
     //checa se existe data
     if(savedData){
     //coloca os itens salvos na tela
-    listContainer.innerHTML = localStorage.getItem("data")
+    listContainer.innerHTML = savedData
     
     //adiciona funções aos itens que já existem
     const listItem = document.querySelectorAll('li')
