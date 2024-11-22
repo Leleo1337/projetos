@@ -1,0 +1,125 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: #e2f5ff;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url("img/clouds.png");
+    background-size: auto;
+}
+
+main{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 200px;
+    border-radius: 20px;
+
+}
+
+
+#weather-search{
+    background-color: #5271FF;
+    height: 200px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 1px -7px 7px 5px rgba(0, 0, 0, 0.100);
+}
+
+#weather-search h1{
+    padding: 15px;
+    color: #f5f5f5;
+}
+
+#weather-search input{
+    font-size: 16px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#weather-search button{
+    margin-top: 20px;
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#weather-search button:hover{
+    background-color: rgb(211, 211, 211);
+}
+
+#weather-search button:active{
+    background-color: white;
+}
+
+
+
+#weather-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background-color: #FFFFFF;
+    box-shadow: -1px 7px 7px 5px rgba(0, 0, 0, 0.100);
+
+    animation: slideIn .5s ease;
+
+}
+
+#weather-info img {
+    width: 100px;
+    height: 100px;
+}
+
+.highlight{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(59, 96, 216);
+}
+
+p{
+    color: #333333;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hidden{
+    display: none !important; 
+}
+
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
