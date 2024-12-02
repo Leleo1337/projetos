@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+
+    <link rel="stylesheet" href="./src/style/style.css">
+
+    <!-- font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Toastify  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+
+    <main id="container">
+        <img src="src/img/illustration.svg" alt="">
+        <h1>Gerar senha</h1>
+        <section id="password-container" class="hidden">
+            <span id="password"></span>
+            <i class="fa-solid fa-copy"></i>
+        </section>
+        <section id="password-settings">
+            <ul>
+                <li>
+                    <input type="number" id="quantity">
+                    <label for="quantity">Quantidade de caracteres</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="inc-lowerCase">
+                    <label for="inc-lowerCase">Incluir letra minuscula</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="inc-upperCase">
+                    <label for="inc-upperCase">Incluir letra maiuscula</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="inc-number">
+                    <label for="inc-number">Incluir número</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="inc-special">
+                    <label for="inc-special">Incluir caractere especial</label>
+                </li>
+            </ul>
+            <button>Gerar senha</button>
+        </section>
+    </main>
+    <footer>
+        <p>feito por <a href="https://github.com/Leleo1337" target="_blank">Leleo1337</a> 
+            inspirado em <a href="https://github.com/Larissakich/password-generator" target="_blank">Larissa Kinch</a></p>
+    </footer>
+    <script src="src/js/script.js" type="module"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+    color: white;
+
+    font-family: 'Nunito Sans', Helvetica, sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+    width: 450px;
+}
+
+img{
+    width: 100px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+#password-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: rgb(49, 49, 54);
+    padding: 15px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+}
+
+#password-container span{
+    width: 90%;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+#password-container i{
+    color: rgb(79, 209, 74);
+    cursor: pointer;
+}
+
+#password-settings{
+    background-color: rgb(49, 49, 54);
+    padding: 20px;
+    height: 240px;
+    border-radius: 10px;
+
+    font-size: 17.7px;
+}
+
+#password-settings ul > li{
+    display: flex;
+    gap: 8px;
+
+    margin-bottom: 5px;
+}
+
+#password-settings input[type="number"]{
+    font-size: 16px;
+    text-align: center;
+    width: 60px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+}
+
+#password-settings button{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+
+    background-color: #95cc52;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul{
+    list-style-type: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    text-align: center;
+    background-color: rgb(8, 8, 8);
+}
+footer a{
+    font-weight: 600;
+    color:rgb(113, 113, 230);
+}
+
+.hidden{
+    display: none !important;
+}

@@ -25,7 +25,6 @@ async function searchWeather(city){
         //pesquisa na api
         const response = await fetch(api)
 
-
         if(!response.ok){
             throw new Error('deu erro zé')
         }
@@ -52,7 +51,7 @@ async function searchWeather(city){
         //tira a borda da section de cima 
         document.querySelector('#weather-search').style = `border-bottom-left-radius: 0px;
                                                             border-bottom-right-radius: 0px;`
-
+                                                            
     }catch(error){
         alert('Erro ao buscar Cidade. Tente novamente')
         container.classList.add('hidden')
