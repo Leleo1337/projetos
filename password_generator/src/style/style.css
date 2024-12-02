@@ -97,6 +97,14 @@ h1{
     cursor: pointer;
 }
 
+#password-settings button:hover{
+    background-color: #78a542;
+}
+
+#password-settings button:active{
+    background-color: #95cc52;
+}
+
 ul{
     list-style-type: none;
 }
