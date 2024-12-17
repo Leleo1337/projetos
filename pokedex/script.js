@@ -66,7 +66,6 @@ form.addEventListener('submit', (e) => {
     input.focus()
 })
 
-
 btn_previous.addEventListener('click', () => {
     searchPokemon--
     if(searchPokemon <= 1){
@@ -75,6 +74,7 @@ btn_previous.addEventListener('click', () => {
     }
     renderPokemon(searchPokemon)
 })
+
 btn_next.addEventListener('click', () => {
     searchPokemon++
     if(searchPokemon >= 1009){
