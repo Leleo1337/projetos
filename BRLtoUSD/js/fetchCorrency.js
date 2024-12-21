@@ -1,5 +1,5 @@
-const brl_input = document.querySelector('.brl input')
-const usd_input = document.querySelector('.usd input')
+const brlInput = document.querySelector('.brl input')
+const usdInput = document.querySelector('.usd input')
 
 const fetchCurrency = async () => {
     const api = `https://economia.awesomeapi.com.br/last/USD-BRL,BRL-USD`
@@ -17,21 +17,21 @@ export const updateDisplay = async () => {
 
     const DEFAULT_USD_VALUE = 1
     
-    usd_input.value = DEFAULT_USD_VALUE
-    brl_input.value = brlValue.toFixed(2)
+    usdInput.value = DEFAULT_USD_VALUE
+    brlInput.value = brlValue.toFixed(2)
 }
 
 export const updateBrlToUsd = async () => {
     const data = await fetchCurrency()
     const usdValue = Number(data.BRLUSD.bid)
-    const brlInputValue = Number(brl_input.value)
-    usd_input.value = (brlInputValue * usdValue).toFixed(2)
+    const brlInputValue = Number(brlInput.value)
+    usdInput.value = (brlInputValue * usdValue).toFixed(2)
 }
 
 export const updateUsdToBrl = async () => {
     const data = await fetchCurrency()
     const usdValue = Number(data.BRLUSD.bid)
 
-    const usdInputValue = Number(usd_input.value)
-    brl_input.value = (usdInputValue / usdValue).toFixed(2)
+    const usdInputValue = Number(usdInput.value)
+    brlInput.value = (usdInputValue / usdValue).toFixed(2)
 }
