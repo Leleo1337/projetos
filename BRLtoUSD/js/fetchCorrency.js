@@ -2,6 +2,13 @@ const brlInput = document.querySelector('.brl input')
 const usdInput = document.querySelector('.usd input')
 
 const fetchCurrency = async () => {
+    if(containsLetters()){
+        alert('[ERRO] Não é possível converter letras, tente novamente com números')
+        usdInput.value = 0
+        brlInput.value = 0
+        return
+    }
+
     const api = `https://economia.awesomeapi.com.br/last/USD-BRL,BRL-USD`
     const apiResponse = await fetch(api)
     if (apiResponse.ok) {
@@ -34,4 +41,17 @@ export const updateUsdToBrl = async () => {
 
     const usdInputValue = Number(usdInput.value)
     brlInput.value = (usdInputValue / usdValue).toFixed(2)
+}
+
+
+function containsLetters(){
+    let charset = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o', 'p','q','r','s','t','u','v','w','x','y','z']
+    for(let i = 0; i < charset.length; i++){
+        if(brlInput.value.includes(charset[i])){
+            return true
+        }
+        if(usdInput.value.includes(charset[i])){
+            return true
+        }   
+    }
 }

@@ -26,7 +26,6 @@ function updateInputWidth(input){
     input.style.width = `${newWidth}px`;
 }
 
-
 //debounce
 let timer;
 const delay = 500
@@ -46,10 +45,8 @@ usdInput.addEventListener('input', () => {
 })
 
 
-
 const usdElement = document.querySelector('.usd')
 const brlElement = document.querySelector('.brl')
-
 
 usdElement.addEventListener('mouseenter', () => {
     usdElement.classList.add('hover')
