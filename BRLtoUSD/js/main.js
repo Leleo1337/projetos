@@ -44,7 +44,6 @@ usdInput.addEventListener('input', () => {
     }, delay)
 })
 
-
 const usdElement = document.querySelector('.usd')
 const brlElement = document.querySelector('.brl')
 

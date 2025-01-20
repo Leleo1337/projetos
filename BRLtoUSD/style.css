@@ -27,6 +27,9 @@ body{
     align-items: baseline;
     transition: all .3s ease;    
 }
+label{
+    transition: all .3s;
+}
 
 span.small{
     font-size: 28px;
