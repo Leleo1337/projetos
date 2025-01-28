@@ -9,8 +9,8 @@ html,body{
 }
 
 body{
-    background-color: #1a1a1a; /* Fundo escuro */
-    
+    background-color: #111112
+    ;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -22,14 +22,13 @@ main{
     width: 500px;
 }
 
-
 section#todo-head{
-    background-color: #973dbb; /* Azul marinho */
+    background-color: #282828;
     height: 120px;
     padding: 20px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.208);
+    box-shadow: -3px -3px 3px 3px rgba(0, 0, 0, 0.208);
 
     position: relative;
     z-index: 1;
@@ -64,17 +63,18 @@ section#todo-head button{
     width: 100px;
     padding: 9.75px;
 
-    background-color: #7e1db9;
-    color: white;
+    background-color: #e4e4e4;
+    color: rgb(0, 0, 0);
     
     border: none;
     border-radius: 30px;
     cursor: pointer;
 }
-section#todo-head button:hover{
-    background-color: rgb(81, 19, 105);
-}
 
+
+section#todo-head button:hover{
+    background-color: rgb(168, 168, 168);
+}
 
 section#todo-body{
     height: 100px;
@@ -165,10 +165,10 @@ li i.fa-check.hidden {
 }
 
 .select:nth-child(even){
-    background-color: #9656b4 !important;
+    background-color: #383838 !important;
 }
 .select:nth-child(odd){
-    background-color: #b669da !important;
+    background-color: #575757 !important;
 }
 
 
@@ -192,5 +192,24 @@ li i.fa-check.hidden {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    main{
+        width: 330px;
+        padding: 20px;
+        margin: auto;
+    }
+    section#todo-head{
+        width: 280px;
+    }
+    section#todo-head button{
+        left: 55%;
+        height: 34px;
+    }
+    section#todo-body{
+        width: 280px;
     }
 }
